@@ -1,0 +1,8 @@
+h3 Posts
+each item in items
+	pre(style='white-space:pre;')
+		| Title: <a href="#" onClick="post('#{item.data.id}')">#{item.data.title}</a>
+		| Author: #{item.data.author}
+		| Subreddit: #{item.data.subreddit}
+		| UpVotes: #{item.data.ups}
+		| Url: <a href="#{item.data.url}">#{item.data.url}</a>
