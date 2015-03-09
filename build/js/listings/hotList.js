@@ -1,4 +1,5 @@
-function hotList(){
+function hotList()
+{
      
     $.get("https://api.reddit.com/hot", function(data) {
         var posts = data.data.children
